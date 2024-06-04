@@ -1,0 +1,253 @@
+.main-inicio{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$bg-main;
+    .h2-sobre-mi{
+        width: 100%;
+        height: auto;
+        background-color:$bg-h2;
+
+        h2{
+            @include h2(100%, center, uppercase, 1.25rem);
+            font-family:$font-family-title;
+        }
+    }
+.p-sobre-mi{
+     width: 50%;
+     height: auto;
+     p{
+        @include p(100%, 5rem, 16px, center);
+        font-family:$font-family-text;
+     }
+    .button-inf{
+        a{
+            &:hover{
+                text-decoration: overline;
+            }
+            button{
+            border-radius:4px;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-left: 3.4375rem;
+            }
+        }
+    }
+    }
+    .img-sobre-mi{
+        width: 50%;
+        img{
+            width: 50%;
+            height: auto;
+            border-radius: 45%;
+        }
+    .p-direccion{
+            width: 100%;
+            height: auto;
+            font-family:$font-family-text;
+            margin: 1.875rem;
+            padding: auto;
+        }
+    }
+    .h2_ppda{
+        @include h2(100%, center, uppercase, 1.25rem);
+        height: auto;
+        background-color: $bg-h2;
+        font-family:$font-family-title;
+    }
+    .section_ppda{
+        width: 100%;
+        height: auto;
+        iframe{
+            width: 60%;
+            height: 100%;
+            margin: 1rem;
+            padding: 1rem;
+            justify-content: center;
+        }
+ }
+    .p-ppda{
+    width: 100%;
+    height: auto;
+    font-family:$font-family-text;
+    margin: 3.125rem;
+}
+}
+
+.main-proyectos{
+    width: 100%;
+    height: auto;
+    background-color:$bg-main;
+    h2{
+        @include h2(100%, center, uppercase, 1.25rem);
+        font-family:$font-family-title;
+        background-color: $bg-h2;
+    }
+        .proyecto-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 2.8125rem;
+            margin-left: 2.5rem;
+            justify-content: center;
+            .card-anzed{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                gap: 1.875rem;
+
+            }
+            .card-akapellah{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                gap: 1.875rem;
+            }
+            .card-lilsupa{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                gap: 1.875rem;
+            }
+        }
+    .proyecto-container-div2{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 2.5rem;
+        justify-content: center;
+        .card-nanutria{
+            h3{
+                font-family:$font-family-title;
+                text-transform:capitalize;
+            }
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 1.875rem;
+            margin: 2.1875rem;
+        }
+        .card-pda{
+            h3{
+                font-family:$font-family-title;
+                text-transform:capitalize;
+            }
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 1.875rem;
+            justify-content: center;
+        }
+    }
+}
+
+
+.main-servicios{
+    width: 100%;
+    height: 62.5rem;
+    background-color:$bg-main;
+    .h2-servicios{
+        width: 100%;
+        height: auto;
+        background-color:$bg-h2;
+        h2{
+            width: 100%;
+            font-family:$font-family-title;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+        }
+    }
+    .producto-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1.25rem;
+        gap: .625rem;
+    }
+    .map-container{
+        padding-bottom: 56.25%;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        gap: 50%;
+    }
+}
+.main-faq{
+    width: 100%;
+    height: auto;
+    background-color:$bg-main;
+    .h2-faq{
+        @include h2(100%, center, uppercase, 1.25rem);
+        font-family:$font-family-title;
+        background-color: $bg-h2;
+    }
+    .ul-faq{
+        width: 100%;
+        margin: 1.5625rem;
+        padding: 1.25rem;
+    }
+}
+
+.main-contacto{
+    width: 100%;
+    height: auto;
+    background-color:$bg-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 23.125rem;
+        h2{
+            color: rgb(15, 1, 1);
+            font-size: 35px;
+        }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        label{
+            color: black;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        input{
+            padding: 17px 25px;
+            border-radius: 1.5625rem;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        textarea{
+            padding: 17px 25px;
+            border-radius: 1.5625rem;
+            margin-bottom: 20px;
+            outline: none;
+        }
+    }
+    .button{
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        border-radius: 25px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(39, 39, 39);
+        }
+    }
+    }
+}

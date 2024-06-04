@@ -1,0 +1,105 @@
+@media (max-width:425px){
+
+    header{
+        width: 100%;
+        height: auto;
+        @include flex(column, center, center, 1rem);
+        font-size: 1rem;
+    }
+    .main-inicio{
+        display: flex;
+        width: 100%;
+
+    .p-sobre-mi{
+        width: 100%;
+    p{
+        @include p(100%, 1.25rem, 16px, center);
+    }
+    }
+}
+.img-sobre-mi{
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 20%;
+    }
+}
+}
+
+
+@media (max-width:425px){
+    
+    .main-proyectos{
+        width: 100%;
+        height: auto;
+        
+        .proyecto-container{
+        width: 100%;
+        padding: 0px;
+        margin-left: 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .card-anzed{
+        width: 100%;
+        gap: .625rem;
+        margin: 0px;
+        align-items: center;
+        }
+        
+        .card-akapellah{
+         width: 100%;
+         gap: .625rem;
+         margin: 0px;
+         align-items: center;
+        }
+        
+        .card-lilsupa{
+         width: 100%;
+         gap: .625rem;
+         margin: 0px;
+         align-items: center;
+      }
+    } 
+  }
+    .proyecto-container-div2{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        .card-nanutria{
+            width: 100%;
+            gap: .625rem;
+            padding: 110px;
+            align-items: center;
+        }
+        .card-pda{
+            width: 110%;
+            gap: .625rem;
+            margin: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width:425px){
+    .main-servicios{
+        width: 100%;
+        height: auto;
+    .producto-container{
+        width: 100%;
+        @include flex(column, center, center, 1rem);
+    }
+    .map-container{
+        @include flex(column, center, center, 1rem);
+       iframe{
+        width: 100%;
+       }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@mixin flex($direction, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin h2($width, $text-align, $text-transform, $font-size){
+    width: $width;
+    text-align: $text-align;
+    text-transform: $text-transform;
+    font-size: $font-size;
+}
+@mixin p($width, $padding, $font-size, $text-align){
+    width: $width;
+    padding: $padding;
+    font-size: $font-size;
+    text-align: $text-align;
+}
+@mixin card($width, $height, $backgraund-color, $border-radius, $box-shadow){
+    width: $width;
+    height: $height;
+    background-color: $backgraund-color;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}

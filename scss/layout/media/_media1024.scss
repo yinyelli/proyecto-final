@@ -1,0 +1,55 @@
+@media (max-width:1024px){
+    .main-inicio{
+        .p-sobre-mi{
+            p{
+                @include p(100%, 1.5625rem, 16px, center); 
+            }
+        }
+
+    }
+    .img-sobre-mi{
+        justify-content: center;
+        img{
+            margin: 3.75rem;
+        }
+    }
+}
+@media (max-width:1024px){
+    .main-proyectos{
+        width: 100%;
+        height: 125rem;
+        .card-anzed{
+            width: 16%;
+        }
+        .card-akapellah{
+            width: 16%;
+        }
+        .card-lilsupa{
+            width: 16%;
+        }
+        .card-nanutria{
+            width: 16%;
+        }
+        .card-pda{
+            width: 16%;
+        }
+    }
+}
+@media (max-width:1024px){
+    .main-servicios{
+        width: 100%;
+        height: 62.5rem;
+        .card{
+            width: 12.5rem;
+        }
+        .card-2{
+            width: 12.5rem;
+        }
+        .card-3{
+            width: 12.5rem;
+        }
+        .card-4{
+            width: 12.5rem;
+        }
+    }
+    }
