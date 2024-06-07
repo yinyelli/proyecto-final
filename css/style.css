@@ -65,7 +65,7 @@ header {
       font-size: 1.25rem;
       font-family: "Poppins", sans-serif; }
   .main-inicio .p-sobre-mi {
-    width: 50%;
+    width: 48%;
     height: auto; }
     .main-inicio .p-sobre-mi p {
       width: 100%;
@@ -81,7 +81,7 @@ header {
       padding: 5px 10px;
       margin-left: 3.4375rem; }
   .main-inicio .img-sobre-mi {
-    width: 50%; }
+    width: 49%; }
     .main-inicio .img-sobre-mi img {
       width: 50%;
       height: auto;
@@ -130,13 +130,12 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    padding: 2.8125rem;
-    margin-left: 2.5rem;
+    margin-left: .3125rem;
     justify-content: center; }
     .main-proyectos .proyecto-container .card-anzed {
       display: flex;
       flex-direction: column;
-      width: 30%;
+      width: 29%;
       gap: 1.875rem; }
       .main-proyectos .proyecto-container .card-anzed h3 {
         font-family: "Poppins", sans-serif;
@@ -144,7 +143,7 @@ header {
     .main-proyectos .proyecto-container .card-akapellah {
       display: flex;
       flex-direction: column;
-      width: 30%;
+      width: 29%;
       gap: 1.875rem; }
       .main-proyectos .proyecto-container .card-akapellah h3 {
         font-family: "Poppins", sans-serif;
@@ -152,7 +151,7 @@ header {
     .main-proyectos .proyecto-container .card-lilsupa {
       display: flex;
       flex-direction: column;
-      width: 30%;
+      width: 29%;
       gap: 1.875rem; }
       .main-proyectos .proyecto-container .card-lilsupa h3 {
         font-family: "Poppins", sans-serif;
@@ -161,7 +160,6 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    padding: 2.5rem;
     justify-content: center; }
     .main-proyectos .proyecto-container-div2 .card-nanutria {
       display: flex;
@@ -221,8 +219,13 @@ header {
     background-color: #dc8686; }
   .main-faq .ul-faq {
     width: 100%;
-    margin: 1.5625rem;
-    padding: 1.25rem; }
+    height: auto;
+    padding: 1.875rem; }
+    .main-faq .ul-faq li {
+      font-family: "Poppins", sans-serif; }
+    .main-faq .ul-faq p {
+      width: 80%;
+      font-family: "Roboto", sans-serif; }
 
 .main-contacto {
   width: 100%;
@@ -281,23 +284,17 @@ header {
     list-style: disc;
     text-transform: capitalize; }
   .footer_inicio .suscripcion {
-    width: 30%;
-    margin-bottom: 20px;
-    border: 1px solid #000000;
-    border-radius: 5px 1px;
-    background-color: #f9f9f9;
-    align-self: center;
-    font-family: "Roboto", sans-serif;
-    text-transform: lowercase; }
-    .footer_inicio .suscripcion form label {
-      margin-bottom: .625rem; }
-    .footer_inicio .suscripcion form input[type=email] {
-      width: 40%;
-      border: 1px solid #000000;
-      border-radius: 5px; }
-    .footer_inicio .suscripcion form input[type=checkbox] {
-      margin-right: .625rem;
-      cursor: pointer; }
+    display: flex;
+    justify-content: center;
+    border: none; }
+    .footer_inicio .suscripcion form {
+      text-align: center;
+      width: 23.125rem; }
+      .footer_inicio .suscripcion form label {
+        color: black;
+        font-size: 15px; }
+      .footer_inicio .suscripcion form input {
+        border-radius: 1.5625rem; }
   .footer_inicio .hr_footer {
     flex-direction: row-reverse;
     border-bottom: 1px solid #dddddd; }
@@ -676,6 +673,10 @@ header {
       width: 12.5rem; } }
 
 @media (max-width: 768px) {
+  .main-inicio {
+    width: 100%; } }
+
+@media (max-width: 768px) {
   .main-proyectos {
     width: 100%; }
     .main-proyectos .proyecto-container {
@@ -684,17 +685,17 @@ header {
       margin-left: 0px;
       align-items: flex-end; }
       .main-proyectos .proyecto-container .card-anzed {
-        width: 40%;
+        width: 38%;
         gap: .625rem;
         margin: 0px;
         align-items: center; }
       .main-proyectos .proyecto-container .card-akapellah {
-        width: 40%;
+        width: 38%;
         gap: .625rem;
         margin: 0px;
         align-items: center; }
       .main-proyectos .proyecto-container .card-lilsupa {
-        width: 40%;
+        width: 38%;
         gap: .625rem;
         margin: 0px;
         align-items: center; }
@@ -702,6 +703,8 @@ header {
     width: 100%;
     padding: 0rem;
     margin-left: 0px; }
+    .proyecto-container-div2:hover {
+      scale: none; }
     .proyecto-container-div2 .card-nanutria {
       width: 40%;
       gap: .625rem;
@@ -725,6 +728,14 @@ header {
     .main-servicios .card-4 {
       width: 10.5rem; } }
 
+@media (max-width: 768px) {
+  .main-faq {
+    width: 100%;
+    height: 76.900rem; }
+    .main-faq .ul-faq p {
+      width: 80%;
+      font-family: "Roboto", sans-serif; } }
+
 @media (max-width: 425px) {
   header {
     width: 100%;
@@ -734,7 +745,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 1rem; }
+    font-size: .9375rem; }
   .main-inicio {
     display: flex;
     width: 100%; }
@@ -745,11 +756,10 @@ header {
         padding: 1.25rem;
         font-size: 16px;
         text-align: center; }
-  .img-sobre-mi {
-    width: 100%; }
-    .img-sobre-mi img {
-      width: 100%;
-      border-radius: 20%; } }
+    .main-inicio .img-sobre-mi {
+      width: 100%; }
+      .main-inicio .img-sobre-mi img {
+        width: 50%; } }
 
 @media (max-width: 425px) {
   .main-proyectos {
@@ -783,14 +793,10 @@ header {
     justify-content: center;
     align-content: center; }
     .proyecto-container-div2 .card-nanutria {
-      width: 100%;
-      gap: .625rem;
-      padding: 110px;
+      padding: 120px;
       align-items: center; }
     .proyecto-container-div2 .card-pda {
-      width: 110%;
-      gap: .625rem;
-      margin: 10px; } }
+      margin: 30px; } }
 
 @media (max-width: 425px) {
   .main-servicios {
@@ -811,3 +817,8 @@ header {
       gap: 1rem; }
       .main-servicios .map-container iframe {
         width: 100%; } }
+
+@media (max-width: 425px) {
+  .main-faq {
+    width: 100%;
+    height: auto; } }
