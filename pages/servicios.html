@@ -10,22 +10,48 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <header> 
-    <div class="logo">
-      <a href="../index.html">
-        <img src="../assets/img/logo.png" alt=""></a>
-    </div>
-      <h1>angel tkyo<br>fotografo</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">inicio</a></li>
-          <li><a href="./proyectos.html">proyectos</a></li>
-          <li><a href="#">servicios</a></li>
-          <li><a href="./faq.html">faq</a></li>
-          <li><a href="./contacto.html">contacto</a></li>
-        </ul>
-      </nav>
-  </header>  
+  <header class="header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt=""></a>
+      <h1 class="h1-titulo">angel tkyo<br>fotografo</h1>
+      <label class="label-hamburguesa" for="menu-hamburguesa">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        width="35" 
+        height="35" 
+        fill="currentColor" 
+        class="list-icon" viewBox="0 0 16 16">
+          <path 
+            fill-rule="evenodd" 
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </label>
+
+      <input class="menu-hamburguesa" type="checkbox" name="" id="menu-hamburguesa">
+
+      <ul class="ul-links">
+        
+        <li class="li-links">
+          <a href="../index.html" class="link">inicio</a>
+        </li>
+        
+        <li class="li-links">
+          <a href="../pages/proyectos.html" class="link">proyectos</a>
+        </li>
+        
+        <li class="li-links">
+          <a href="#" class="link">servicios</a>
+        </li>
+        
+        <li class="li-links">
+          <a href="../pages/faq.html" class="link">faq</a>
+        </li>
+      
+        <li class="li-links">
+          <a href="../pages/contacto.html" class="link">contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
       <main class="main-servicios">
         <div class="h2-servicios">
           <h2>servicios</h2>

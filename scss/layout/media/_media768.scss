@@ -1,3 +1,32 @@
+@media (min-width:768px){
+    .header{
+        width: 100%;
+     .navbar{
+       width: 100%;
+             .label-hamburguesa{
+               display: none;
+             }
+             .ul-links{
+               position: static;
+               width: auto;
+               height: auto;
+               flex-direction: row;
+               .li-links{
+                 color: white;
+                 padding: .2rem ;
+                 .link{
+                   font-size: 1rem;
+                   transition: all .3s;
+                 &:hover{
+                   background-color: rgb(87, 87, 87);
+                 }
+               }
+               }
+           }
+       }
+     }
+   }
+
 @media (max-width:768px){
     .main-inicio{
         width: 100%;
@@ -10,51 +39,42 @@
     width: 100%;
     .proyecto-container{
         width: 100%;
-        padding: 0px;
-        margin-left: 0px;
-        align-items: flex-end;
+        gap: 4.1875rem;
         .card-anzed{
-            width: 38%;
+            width: 20%;
             gap: .625rem;
-            margin: 0px;
+            margin: .625rem;
             align-items: center;
         }
         .card-akapellah{
-            width: 38%;
+            width: 20%;
             gap: .625rem;
-            margin: 0px;
+            margin: .625rem;
             align-items: center;
-
         }
         .card-lilsupa{
-            width: 38%;
+            width: 20%;
             gap: .625rem;
-            margin: 0px;
+            margin: .625rem;
             align-items: center;
-        }
     }
 }
 .proyecto-container-div2{
     width: 100%;
-    padding: 0rem;
-    margin-left: 0px;
-    &:hover{
-        scale: none;
-        }
     .card-nanutria{
         width: 40%;
         gap: .625rem;
-        margin: 0px;
+        margin: .625rem;
         align-items: flex-end;
     }
     .card-pda{
         width: 40%;
         gap: .625rem;
-        margin: 0px;  
+        margin: .625rem;  
     }
 }
 }
-
+}
 
 
 

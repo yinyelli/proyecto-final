@@ -5,48 +5,53 @@
   padding: 0;
   box-sizing: border-box; }
 
-header {
-  width: 100%;
+.header {
   height: auto;
   background-color: #202020;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: sticky;
-  top: 0; }
-  header .logo {
-    width: 100%;
-    height: auto; }
-    header .logo a img {
-      width: 30%;
-      height: auto;
-      background-size: contain;
-      border-radius: 50%; }
-  header h1 {
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    color: #EEEEEE;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 24px; }
-  header nav {
-    width: 100%;
-    margin: 1rem; }
-    header nav ul {
+  font-family: "Poppins", sans-serif; }
+  .header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    padding: 0 2rem; }
+    .header .navbar .logo {
+      width: 30%; }
+      .header .navbar .logo img {
+        height: 5rem;
+        background-size: contain;
+        border-radius: 50%; }
+    .header .navbar .h1-titulo {
+      color: aliceblue;
+      font-family: "Poppins", sans-serif;
+      text-transform: capitalize; }
+    .header .navbar .label-hamburguesa .list-icon {
+      color: white;
+      cursor: pointer; }
+    .header .navbar .menu-hamburguesa {
+      display: none; }
+    .header .navbar .menu-hamburguesa:checked + .ul-links {
+      height: calc(100vh - 5rem); }
+    .header .navbar .ul-links {
+      width: 50%;
+      top: 80px;
+      height: 0;
+      right: 0;
+      overflow: hidden;
+      /*height: calc(100vh - 5rem);*/
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
-      list-style: none;
-      gap: 1rem; }
-      header nav ul li a {
-        text-decoration: none;
-        font-family: "Roboto", sans-serif;
-        color: #EEEEEE; }
-        header nav ul li a:hover {
-          text-decoration: overline; }
+      gap: 48px; }
+      .header .navbar .ul-links .li-links {
+        list-style: none; }
+        .header .navbar .ul-links .li-links .link {
+          text-transform: capitalize;
+          text-decoration: none;
+          color: #EEEEEE; }
 
 .main-inicio {
   width: 100%;
@@ -672,6 +677,27 @@ header {
     .main-servicios .card-4 {
       width: 12.5rem; } }
 
+@media (min-width: 768px) {
+  .header {
+    width: 100%; }
+    .header .navbar {
+      width: 100%; }
+      .header .navbar .label-hamburguesa {
+        display: none; }
+      .header .navbar .ul-links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row; }
+        .header .navbar .ul-links .li-links {
+          color: white;
+          padding: .2rem; }
+          .header .navbar .ul-links .li-links .link {
+            font-size: 1rem;
+            transition: all .3s; }
+            .header .navbar .ul-links .li-links .link:hover {
+              background-color: #575757; } }
+
 @media (max-width: 768px) {
   .main-inicio {
     width: 100%; } }
@@ -681,39 +707,33 @@ header {
     width: 100%; }
     .main-proyectos .proyecto-container {
       width: 100%;
-      padding: 0px;
-      margin-left: 0px;
-      align-items: flex-end; }
+      gap: 4.1875rem; }
       .main-proyectos .proyecto-container .card-anzed {
-        width: 38%;
+        width: 20%;
         gap: .625rem;
-        margin: 0px;
+        margin: .625rem;
         align-items: center; }
       .main-proyectos .proyecto-container .card-akapellah {
-        width: 38%;
+        width: 20%;
         gap: .625rem;
-        margin: 0px;
+        margin: .625rem;
         align-items: center; }
       .main-proyectos .proyecto-container .card-lilsupa {
-        width: 38%;
+        width: 20%;
         gap: .625rem;
-        margin: 0px;
+        margin: .625rem;
         align-items: center; }
-  .proyecto-container-div2 {
-    width: 100%;
-    padding: 0rem;
-    margin-left: 0px; }
-    .proyecto-container-div2:hover {
-      scale: none; }
-    .proyecto-container-div2 .card-nanutria {
-      width: 40%;
-      gap: .625rem;
-      margin: 0px;
-      align-items: flex-end; }
-    .proyecto-container-div2 .card-pda {
-      width: 40%;
-      gap: .625rem;
-      margin: 0px; } }
+    .main-proyectos .proyecto-container-div2 {
+      width: 100%; }
+      .main-proyectos .proyecto-container-div2 .card-nanutria {
+        width: 40%;
+        gap: .625rem;
+        margin: .625rem;
+        align-items: flex-end; }
+      .main-proyectos .proyecto-container-div2 .card-pda {
+        width: 40%;
+        gap: .625rem;
+        margin: .625rem; } }
 
 @media (max-width: 768px) {
   .main-servicios {
@@ -737,66 +757,47 @@ header {
       font-family: "Roboto", sans-serif; } }
 
 @media (max-width: 425px) {
-  header {
+  .main-inicio .p-sobre-mi {
+    width: 100%; }
+  .main-inicio .img-sobre-mi {
+    width: 100%; }
+    .main-inicio .img-sobre-mi img {
+      width: 70%;
+      border-radius: 45%; }
+  .main-inicio .p-ppda {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-size: .9375rem; }
-  .main-inicio {
-    display: flex;
-    width: 100%; }
-    .main-inicio .p-sobre-mi {
-      width: 100%; }
-      .main-inicio .p-sobre-mi p {
-        width: 100%;
-        padding: 1.25rem;
-        font-size: 16px;
-        text-align: center; }
-    .main-inicio .img-sobre-mi {
-      width: 100%; }
-      .main-inicio .img-sobre-mi img {
-        width: 50%; } }
+    font-family: "Roboto", sans-serif;
+    margin: 3.125rem; } }
 
 @media (max-width: 425px) {
   .main-proyectos {
     width: 100%;
-    height: auto; }
+    height: 312.5rem; }
     .main-proyectos .proyecto-container {
       width: 100%;
-      padding: 0px;
-      margin-left: 0px;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center; }
       .main-proyectos .proyecto-container .card-anzed {
-        width: 100%;
-        gap: .625rem;
-        margin: 0px;
-        align-items: center; }
+        width: 100%; }
       .main-proyectos .proyecto-container .card-akapellah {
-        width: 100%;
-        gap: .625rem;
-        margin: 0px;
-        align-items: center; }
+        width: 100%; }
       .main-proyectos .proyecto-container .card-lilsupa {
+        width: 100%; }
+    .main-proyectos .proyecto-container-div2 {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .main-proyectos .proyecto-container-div2 .card-nanutria {
         width: 100%;
-        gap: .625rem;
-        margin: 0px;
-        align-items: center; }
-  .proyecto-container-div2 {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center; }
-    .proyecto-container-div2 .card-nanutria {
-      padding: 120px;
-      align-items: center; }
-    .proyecto-container-div2 .card-pda {
-      margin: 30px; } }
+        align-items: center;
+        margin: 0; }
+      .main-proyectos .proyecto-container-div2 .card-pda {
+        width: 100%;
+        align-items: center; } }
 
 @media (max-width: 425px) {
   .main-servicios {
@@ -821,4 +822,8 @@ header {
 @media (max-width: 425px) {
   .main-faq {
     width: 100%;
+    height: 2900px; } }
+
+@media (max-width: 425px) {
+  .footer_inicio {
     height: auto; } }

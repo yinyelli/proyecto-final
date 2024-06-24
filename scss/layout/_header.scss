@@ -1,50 +1,60 @@
-header{
-    width: 100%;
-    height: auto;
-    background-color:$bg-header;
+.header{
+  height: auto;
+  background-color: $bg-header;
+  font-family: $font-family-title;
+  .navbar{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     position: sticky;
-    top: 0;
+    padding: 0 2rem;
     .logo{
-      width: 100%;
-      height: auto;
-      a{
+      width: 30%;
        img{
-        width: 30%;
-        height: auto;
-        background-size: contain;
-        border-radius: 50%;
-       }  
+         height: 5rem;
+         background-size: contain;
+         border-radius: 50%;
+       }
      }
+     .h1-titulo{
+       color: aliceblue;
+       font-family: $font-family-title;
+       text-transform: capitalize;
+     }
+     .label-hamburguesa{
+       .list-icon{
+        color: white;
+        cursor: pointer;
+      }
     }
-    h1{
-        width: 100%;
-        font-family:$font-family-title;
-        color:$color-text;
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 24px;
+    .menu-hamburguesa{
+      display: none;
     }
-    nav{
-        width: 100%;
-        margin: 1rem;
-        ul{
-          @include flex(row,center,center,1rem);
-            list-style: none;
-            gap: 1rem;
-        li{
-            a{
-              text-decoration: none;
-              font-family:$font-family-text;
-              color:$color-text;
-              &:hover{
-                text-decoration: overline;
-              } 
-            }
+    .menu-hamburguesa:checked + .ul-links{
+      height: calc(100vh - 5rem);
+} 
+    .ul-links{
+      width: 50%;
+      top: 80px;
+      height: 0;
+      right: 0;
+      overflow: hidden;
+      /*height: calc(100vh - 5rem);*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      .li-links{
+        list-style: none;
+        .link{
+          text-transform: capitalize;
+          text-decoration: none;
+          color: $color-text;
         }
-        }
+      }
     }
+  }
 }
