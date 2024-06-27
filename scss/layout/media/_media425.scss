@@ -6,19 +6,24 @@
         .img-sobre-mi{
             width: 100%;
             img{
-                width: 70%;
+                width: 80%;
                 border-radius: 45%;
             }
      }
+     .section_ppda{
+        iframe{
+            width: 90%;
+            }
         .p-ppda{
-        width: 100%;
-        height: auto;
-        font-family:$font-family-text;
-        margin: 3.125rem;
-    }
+        width: 80%;
+        margin: 30px;
     }
 }
-@media (max-width:425px){
+}
+}
+
+
+/**@media (max-width:425px){
     
     .main-proyectos{
         width: 100%;
@@ -58,8 +63,7 @@
         }
     }
  }
-}
-
+}**/
 
 
 
@@ -69,23 +73,32 @@
         width: 100%;
         height: auto;
     .producto-container{
-        width: 100%;
-        @include flex(column, center, center, 1rem);
+        flex-direction: column;
+        gap: .9375rem;
+        align-items: center;
+        p{
+            font-size: 18px;
+        }
     }
     .map-container{
-        @include flex(column, center, center, 1rem);
-       iframe{
         width: 100%;
-       }
+        padding-top: 0;
+        padding-left: 0;
+        iframe{
+            width: 95%;
+        }
     }
-  }
+}
 }
 
+
 @media (max-width:425px){
-    .main-faq{
-        width: 100%;
-        height: 2900px;
-    }
+        .main-faq{
+           height: 130rem;
+            .h2-faq{
+                @include h2(100%, center, capitalize, 16px);
+            }
+        }
 }
 
 @media (max-width:425px){

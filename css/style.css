@@ -66,41 +66,47 @@
     .main-inicio .h2-sobre-mi h2 {
       width: 100%;
       text-align: center;
-      text-transform: uppercase;
+      text-transform: capitalize;
       font-size: 1.25rem;
       font-family: "Poppins", sans-serif; }
   .main-inicio .p-sobre-mi {
-    width: 48%;
+    width: 40%;
     height: auto; }
     .main-inicio .p-sobre-mi p {
       width: 100%;
-      padding: 5rem;
-      font-size: 16px;
+      padding: 5.9375rem;
+      font-size: 20px;
       text-align: center;
       font-family: "Roboto", sans-serif; }
-    .main-inicio .p-sobre-mi .button-inf a:hover {
-      text-decoration: overline; }
-    .main-inicio .p-sobre-mi .button-inf a button {
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 5px 10px;
-      margin-left: 3.4375rem; }
+    .main-inicio .p-sobre-mi .button-inf {
+      padding-left: 33%; }
+      .main-inicio .p-sobre-mi .button-inf a:hover {
+        text-decoration: overline; }
+      .main-inicio .p-sobre-mi .button-inf a button {
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 5px 10px;
+        margin-left: 3.4375rem; }
   .main-inicio .img-sobre-mi {
-    width: 49%; }
+    width: 50%; }
     .main-inicio .img-sobre-mi img {
-      width: 50%;
-      height: auto;
-      border-radius: 45%; }
+      width: 80%;
+      height: 43.75rem;
+      margin: 50px;
+      border-radius: 50%; }
     .main-inicio .img-sobre-mi .p-direccion {
       width: 100%;
       height: auto;
+      padding: 30px;
+      padding-left: 20%;
       font-family: "Roboto", sans-serif;
-      margin: 1.875rem;
-      padding: auto; }
+      font-size: 20px;
+      text-transform: capitalize;
+      top: 0; }
   .main-inicio .h2_ppda {
     width: 100%;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.25rem;
     height: auto;
     background-color: #dc8686;
@@ -109,11 +115,10 @@
     width: 100%;
     height: auto; }
     .main-inicio .section_ppda iframe {
-      width: 60%;
-      height: 100%;
+      width: 70%;
+      height: 500px;
       margin: 1rem;
-      padding: 1rem;
-      justify-content: center; }
+      padding: 1rem; }
   .main-inicio .p-ppda {
     width: 100%;
     height: auto;
@@ -122,72 +127,214 @@
 
 .main-proyectos {
   width: 100%;
-  height: auto;
-  background-color: #c7c8cc; }
-  .main-proyectos h2 {
+  height: 150.00rem;
+  background-color: #c7c8cc;
+  font-family: "Poppins", sans-serif; }
+  .main-proyectos .main-titulo-proyectos {
     width: 100%;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
-    background-color: #dc8686; }
-  .main-proyectos .proyecto-container {
+    background-color: #dc8686;
+    padding-top: 10px; }
+  .main-proyectos .slider-box-anzed {
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: .3125rem;
-    justify-content: center; }
-    .main-proyectos .proyecto-container .card-anzed {
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-anzed ul {
       display: flex;
-      flex-direction: column;
-      width: 29%;
-      gap: 1.875rem; }
-      .main-proyectos .proyecto-container .card-anzed h3 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize; }
-    .main-proyectos .proyecto-container .card-akapellah {
-      display: flex;
-      flex-direction: column;
-      width: 29%;
-      gap: 1.875rem; }
-      .main-proyectos .proyecto-container .card-akapellah h3 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize; }
-    .main-proyectos .proyecto-container .card-lilsupa {
-      display: flex;
-      flex-direction: column;
-      width: 29%;
-      gap: 1.875rem; }
-      .main-proyectos .proyecto-container .card-lilsupa h3 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize; }
-  .main-proyectos .proyecto-container-div2 {
+      padding: 0;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-anzed ul li {
+        width: 90%;
+        list-style: none;
+        position: relative; }
+        .main-proyectos .slider-box-anzed ul li .texto {
+          width: 100%; }
+          .main-proyectos .slider-box-anzed ul li .texto h2 {
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize; }
+        .main-proyectos .slider-box-anzed ul li .a1 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-anzed ul li .a2 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-anzed ul li .a3 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-anzed ul li .a4 {
+          width: 95%;
+          height: 31.25rem; }
+  .main-proyectos .slider-box-akapellah {
     width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; }
-    .main-proyectos .proyecto-container-div2 .card-nanutria {
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-akapellah ul {
       display: flex;
-      flex-direction: column;
-      width: 30%;
-      gap: 1.875rem;
-      margin: 2.1875rem; }
-      .main-proyectos .proyecto-container-div2 .card-nanutria h3 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize; }
-    .main-proyectos .proyecto-container-div2 .card-pda {
+      padding: 0;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-akapellah ul li {
+        width: 90%;
+        list-style: none;
+        position: relative; }
+        .main-proyectos .slider-box-akapellah ul li .texto {
+          width: 100%; }
+          .main-proyectos .slider-box-akapellah ul li .texto h2 {
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize; }
+        .main-proyectos .slider-box-akapellah ul li .aka1 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka2 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka3 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka4 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka5 {
+          width: 95%;
+          height: 31.25rem; }
+  .main-proyectos .slider-box-stand-up {
+    width: 100%;
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-stand-up ul {
       display: flex;
-      flex-direction: column;
-      width: 30%;
-      gap: 1.875rem;
-      justify-content: center; }
-      .main-proyectos .proyecto-container-div2 .card-pda h3 {
-        font-family: "Poppins", sans-serif;
-        text-transform: capitalize; }
+      padding: 0;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-stand-up ul li {
+        width: 90%;
+        list-style: none;
+        position: relative; }
+        .main-proyectos .slider-box-stand-up ul li .texto {
+          width: 100%; }
+          .main-proyectos .slider-box-stand-up ul li .texto h2 {
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize; }
+        .main-proyectos .slider-box-stand-up ul li .stu1 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu2 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu3 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu4 {
+          width: 95%;
+          height: 31.25rem; }
 
+@keyframes slide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+/** .main-proyectos{
+    width: 100%;
+    height: auto;
+    background-color:$bg-main;
+     h2{
+        @include h2(100%, center, uppercase, 1.25rem);
+        font-family:$font-family-title;
+        background-color: $bg-h2;
+    }
+        .proyecto-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: .3125rem;
+            justify-content: center;
+            .card-anzed{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 29%;
+                gap: 1.875rem;
+
+            }
+            .card-akapellah{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 29%;
+                gap: 1.875rem;
+            }
+            .card-lilsupa{
+                h3{
+                    font-family:$font-family-title;
+                    text-transform:capitalize;
+                }
+                display: flex;
+                flex-direction: column;
+                width: 29%;
+                gap: 1.875rem;
+            }
+        }
+    .proyecto-container-div2{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        .card-nanutria{
+            h3{
+                font-family:$font-family-title;
+                text-transform:capitalize;
+            }
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 1.875rem;
+            margin: 2.1875rem;
+        }
+        .card-pda{
+            h3{
+                font-family:$font-family-title;
+                text-transform:capitalize;
+            }
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 1.875rem;
+            justify-content: center;
+        }
+    }
+}**/
 .main-servicios {
   width: 100%;
-  height: 62.5rem;
+  height: auto;
   background-color: #c7c8cc; }
   .main-servicios .h2-servicios {
     width: 100%;
@@ -195,21 +342,27 @@
     background-color: #dc8686; }
     .main-servicios .h2-servicios h2 {
       width: 100%;
-      font-family: "Poppins", sans-serif;
       text-align: center;
-      text-transform: uppercase;
-      font-size: 1.25rem; }
+      text-transform: capitalize;
+      font-size: 1.25rem;
+      font-family: "Poppins", sans-serif; }
   .main-servicios .producto-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin: 1.25rem;
-    gap: .625rem; }
+    justify-content: space-evenly;
+    margin-top: .9375rem; }
+    .main-servicios .producto-container h3 {
+      text-transform: capitalize; }
+    .main-servicios .producto-container p {
+      font-size: 18px; }
+    .main-servicios .producto-container button {
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 5px 10px; }
   .main-servicios .map-container {
-    padding-bottom: 56.25%;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    gap: 50%; }
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 30%; }
 
 .main-faq {
   width: 100%;
@@ -218,7 +371,7 @@
   .main-faq .h2-faq {
     width: 100%;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
     background-color: #dc8686; }
@@ -293,8 +446,7 @@
     justify-content: center;
     border: none; }
     .footer_inicio .suscripcion form {
-      text-align: center;
-      width: 23.125rem; }
+      text-align: center; }
       .footer_inicio .suscripcion form label {
         color: black;
         font-size: 15px; }
@@ -639,43 +791,160 @@
     text-align: center; }
 
 @media (max-width: 1024px) {
-  .main-inicio .p-sobre-mi p {
-    width: 100%;
-    padding: 1.5625rem;
-    font-size: 16px;
-    text-align: center; }
-  .img-sobre-mi {
-    justify-content: center; }
-    .img-sobre-mi img {
-      margin: 3.75rem; } }
+  .main-inicio .p-sobre-mi {
+    width: 49%; }
+    .main-inicio .p-sobre-mi p {
+      width: 100%;
+      padding: 2.25rem;
+      font-size: 20px;
+      text-align: center; }
+    .main-inicio .p-sobre-mi .button-inf {
+      padding-left: 30%; }
+  .main-inicio .img-sobre-mi {
+    width: 50%; }
+    .main-inicio .img-sobre-mi img {
+      width: 85%;
+      height: 30rem;
+      margin: 5%; } }
 
 @media (max-width: 1024px) {
-  .main-proyectos {
+  .main-proyectos .slider-box-anzed {
     width: 100%;
-    height: 125rem; }
-    .main-proyectos .card-anzed {
-      width: 16%; }
-    .main-proyectos .card-akapellah {
-      width: 16%; }
-    .main-proyectos .card-lilsupa {
-      width: 16%; }
-    .main-proyectos .card-nanutria {
-      width: 16%; }
-    .main-proyectos .card-pda {
-      width: 16%; } }
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 0;
+    overflow: hidden; }
+    .main-proyectos .slider-box-anzed ul li .texto {
+      width: 100%; }
+      .main-proyectos .slider-box-anzed ul li .texto h2 {
+        font-family: "Roboto", sans-serif;
+        text-transform: capitalize; }
+    .main-proyectos .slider-box-anzed ul li .a1 {
+      width: 75%;
+      height: 25rem;
+      margin-left: 15px; }
+    .main-proyectos .slider-box-anzed ul li .a2 {
+      width: 75%;
+      height: 25rem;
+      margin-left: 15px; }
+    .main-proyectos .slider-box-anzed ul li .a3 {
+      width: 75%;
+      height: 25rem;
+      margin-left: 15px; }
+    .main-proyectos .slider-box-anzed ul li .a4 {
+      width: 75%;
+      height: 25rem;
+      margin-left: 15px; }
+  .main-proyectos .slider-box-akapellah {
+    width: 100%;
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-akapellah ul li .aka1 {
+      width: 95%;
+      height: 31.25rem; }
+    .main-proyectos .slider-box-akapellah ul li .aka2 {
+      width: 99%;
+      height: 31.25rem; }
+    .main-proyectos .slider-box-akapellah ul li .aka3 {
+      width: 100%;
+      height: 43.75rem; }
+    .main-proyectos .slider-box-akapellah ul li .aka4 {
+      width: 95%;
+      height: 31.25rem; }
+    .main-proyectos .slider-box-akapellah ul li .aka5 {
+      width: 95%;
+      height: 31.25rem; }
+  .main-proyectos .slider-box-stand-up {
+    width: 100%;
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-stand-up ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-stand-up ul li {
+        width: 90%;
+        list-style: none;
+        position: relative; }
+        .main-proyectos .slider-box-stand-up ul li .texto {
+          width: 100%; }
+          .main-proyectos .slider-box-stand-up ul li .texto h2 {
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize; }
+        .main-proyectos .slider-box-stand-up ul li .stu1 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu2 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu3 {
+          width: 95%;
+          height: 31.25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu4 {
+          width: 95%;
+          height: 31.25rem; } }
 
 @media (max-width: 1024px) {
   .main-servicios {
     width: 100%;
-    height: 62.5rem; }
-    .main-servicios .card {
-      width: 12.5rem; }
-    .main-servicios .card-2 {
-      width: 12.5rem; }
-    .main-servicios .card-3 {
-      width: 12.5rem; }
-    .main-servicios .card-4 {
-      width: 12.5rem; } }
+    height: auto;
+    background-color: #c7c8cc; }
+    .main-servicios .h2-servicios {
+      width: 100%;
+      height: auto;
+      background-color: #dc8686; }
+      .main-servicios .h2-servicios h2 {
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.25rem;
+        font-family: "Poppins", sans-serif; }
+    .main-servicios .producto-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: .9375rem;
+      gap: .9375rem;
+      align-items: center; }
+      .main-servicios .producto-container .card {
+        width: 50%;
+        height: 15.625rem;
+        background-color: gray;
+        border-radius: 5px;
+        box-shadow: -14px -8px 10px #000; }
+      .main-servicios .producto-container .card-2 {
+        width: 50%;
+        height: 15.625rem;
+        background-color: gray;
+        border-radius: 5px;
+        box-shadow: -14px -8px 10px #000; }
+      .main-servicios .producto-container .card-3 {
+        width: 50%;
+        height: 15.625rem;
+        background-color: gray;
+        border-radius: 5px;
+        box-shadow: -14px -8px 10px #000; }
+      .main-servicios .producto-container .card-4 {
+        width: 50%;
+        height: 15.625rem;
+        background-color: gray;
+        border-radius: 5px;
+        box-shadow: -14px -8px 10px #000; }
+      .main-servicios .producto-container h3 {
+        text-transform: capitalize; }
+      .main-servicios .producto-container p {
+        font-size: 19px; }
+      .main-servicios .producto-container button {
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 10px 13px; }
+    .main-servicios .map-container {
+      padding-left: 20%; } }
 
 @media (min-width: 768px) {
   .header {
@@ -700,53 +969,37 @@
 
 @media (max-width: 768px) {
   .main-inicio {
-    width: 100%; } }
-
-@media (max-width: 768px) {
-  .main-proyectos {
-    width: 100%; }
-    .main-proyectos .proyecto-container {
-      width: 100%;
-      gap: 4.1875rem; }
-      .main-proyectos .proyecto-container .card-anzed {
-        width: 20%;
-        gap: .625rem;
-        margin: .625rem;
-        align-items: center; }
-      .main-proyectos .proyecto-container .card-akapellah {
-        width: 20%;
-        gap: .625rem;
-        margin: .625rem;
-        align-items: center; }
-      .main-proyectos .proyecto-container .card-lilsupa {
-        width: 20%;
-        gap: .625rem;
-        margin: .625rem;
-        align-items: center; }
-    .main-proyectos .proyecto-container-div2 {
+    width: 100%;
+    flex-direction: column; }
+    .main-inicio .p-sobre-mi {
       width: 100%; }
-      .main-proyectos .proyecto-container-div2 .card-nanutria {
-        width: 40%;
-        gap: .625rem;
-        margin: .625rem;
-        align-items: flex-end; }
-      .main-proyectos .proyecto-container-div2 .card-pda {
-        width: 40%;
-        gap: .625rem;
-        margin: .625rem; } }
+      .main-inicio .p-sobre-mi p {
+        width: 100%;
+        padding: 2.25rem;
+        font-size: 20px;
+        text-align: center; }
+      .main-inicio .p-sobre-mi .button-inf {
+        padding-left: 37%; }
+    .main-inicio .img-sobre-mi {
+      width: 100%; }
+      .main-inicio .img-sobre-mi img {
+        width: 85%;
+        height: 680px; }
+    .main-inicio .p-ppda {
+      width: 80%;
+      margin: 1.5625rem;
+      font-size: 20px; } }
 
 @media (max-width: 768px) {
   .main-servicios {
     width: 100%;
-    height: 62.5rem; }
-    .main-servicios .card {
-      width: 10.5rem; }
-    .main-servicios .card-2 {
-      width: 10.5rem; }
-    .main-servicios .card-3 {
-      width: 10.5rem; }
-    .main-servicios .card-4 {
-      width: 10.5rem; } }
+    height: auto; }
+    .main-servicios .map-container {
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 0; }
+      .main-servicios .map-container iframe {
+        width: 95%; } }
 
 @media (max-width: 768px) {
   .main-faq {
@@ -756,74 +1009,336 @@
       width: 80%;
       font-family: "Roboto", sans-serif; } }
 
+@media (max-width: 430px) {
+  .main-inicio {
+    flex-direction: column; }
+    .main-inicio .h2-sobre-mi h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem; }
+    .main-inicio .p-sobre-mi {
+      width: 100%; }
+      .main-inicio .p-sobre-mi .button-inf {
+        padding-left: 27%; }
+    .main-inicio .img-sobre-mi {
+      width: 90%; }
+      .main-inicio .img-sobre-mi img {
+        width: 90%;
+        height: 350px;
+        margin: 10%; }
+    .main-inicio .p-ppda {
+      width: 80%;
+      margin: 1.5625rem; } }
+
+@media (max-width: 430px) {
+  .main-faq {
+    height: 125rem; }
+    .main-faq .h2-faq {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px; }
+    .main-faq .ul-faq {
+      padding: 45px; } }
+
+@media (max-width: 428px) {
+  .main-inicio {
+    flex-direction: column; }
+    .main-inicio .h2-sobre-mi h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem; }
+    .main-inicio .p-sobre-mi {
+      width: 100%; }
+      .main-inicio .p-sobre-mi .button-inf {
+        padding-left: 27%; }
+    .main-inicio .img-sobre-mi {
+      width: 90%; }
+      .main-inicio .img-sobre-mi img {
+        width: 90%;
+        height: 350px;
+        margin: 10%; }
+    .main-inicio .p-ppda {
+      width: 80%;
+      margin: 1.5625rem; } }
+
+@media (max-width: 428px) {
+  .main-servicios {
+    height: 87.5rem; }
+    .main-servicios .h2-servicios h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.125rem; }
+    .main-servicios .producto-container {
+      flex-direction: column;
+      gap: .9375rem;
+      align-items: center; }
+      .main-servicios .producto-container p {
+        font-size: 18px; }
+    .main-servicios .map-container {
+      width: 100%;
+      padding-top: 0;
+      padding-left: 0; }
+      .main-servicios .map-container iframe {
+        width: 95%; } }
+
+@media (max-width: 428px) {
+  .main-faq {
+    height: 125rem; }
+    .main-faq .h2-faq {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px; }
+    .main-faq .ul-faq {
+      padding: 45px; } }
+
 @media (max-width: 425px) {
   .main-inicio .p-sobre-mi {
     width: 100%; }
   .main-inicio .img-sobre-mi {
     width: 100%; }
     .main-inicio .img-sobre-mi img {
-      width: 70%;
+      width: 80%;
       border-radius: 45%; }
-  .main-inicio .p-ppda {
-    width: 100%;
-    height: auto;
-    font-family: "Roboto", sans-serif;
-    margin: 3.125rem; } }
+  .main-inicio .section_ppda iframe {
+    width: 90%; }
+  .main-inicio .section_ppda .p-ppda {
+    width: 80%;
+    margin: 30px; } }
 
-@media (max-width: 425px) {
-  .main-proyectos {
-    width: 100%;
-    height: 312.5rem; }
-    .main-proyectos .proyecto-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center; }
-      .main-proyectos .proyecto-container .card-anzed {
-        width: 100%; }
-      .main-proyectos .proyecto-container .card-akapellah {
-        width: 100%; }
-      .main-proyectos .proyecto-container .card-lilsupa {
-        width: 100%; }
-    .main-proyectos .proyecto-container-div2 {
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center; }
-      .main-proyectos .proyecto-container-div2 .card-nanutria {
+/**@media (max-width:425px){
+    
+    .main-proyectos{
         width: 100%;
-        align-items: center;
-        margin: 0; }
-      .main-proyectos .proyecto-container-div2 .card-pda {
+        height: 312.5rem;
+        
+        .proyecto-container{
+            width: 100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        .card-anzed{
+            width: 100%;
+        }
+        
+        .card-akapellah{
+         width: 100%;
+        }
+        
+        .card-lilsupa{
         width: 100%;
-        align-items: center; } }
-
+      }
+    } 
+    .proyecto-container-div2{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        .card-nanutria{
+         width: 100%;
+         align-items: center;
+         margin: 0;
+        }
+        .card-pda{
+         width: 100%;
+         align-items: center;
+        }
+    }
+ }
+}**/
 @media (max-width: 425px) {
   .main-servicios {
     width: 100%;
     height: auto; }
     .main-servicios .producto-container {
-      width: 100%;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem; }
+      gap: .9375rem;
+      align-items: center; }
+      .main-servicios .producto-container p {
+        font-size: 18px; }
     .main-servicios .map-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem; }
+      width: 100%;
+      padding-top: 0;
+      padding-left: 0; }
       .main-servicios .map-container iframe {
-        width: 100%; } }
+        width: 95%; } }
 
 @media (max-width: 425px) {
   .main-faq {
-    width: 100%;
-    height: 2900px; } }
+    height: 130rem; }
+    .main-faq .h2-faq {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px; } }
 
 @media (max-width: 425px) {
   .footer_inicio {
     height: auto; } }
+
+@media (max-width: 393px) {
+  .main-faq {
+    height: 146.875rem; }
+    .main-faq .h2-faq {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px; } }
+
+@media (max-width: 320px) {
+  .main-inicio {
+    flex-direction: column; }
+    .main-inicio .h2-sobre-mi h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem; }
+    .main-inicio .p-sobre-mi {
+      width: 100%; }
+      .main-inicio .p-sobre-mi .button-inf {
+        padding-left: 20%; }
+    .main-inicio .img-sobre-mi {
+      width: 90%; }
+      .main-inicio .img-sobre-mi img {
+        width: 80%;
+        height: 350px;
+        margin: 15%; }
+      .main-inicio .img-sobre-mi .p-direccion {
+        padding: 10px;
+        padding-left: 15%;
+        font-size: 16px; }
+    .main-inicio .h2_ppda {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem; }
+    .main-inicio .section_ppda iframe {
+      width: 90%; }
+    .main-inicio .p-ppda {
+      width: 80%;
+      margin: 1.5625rem; } }
+
+.main-proyectos {
+  height: 112.5rem; }
+  .main-proyectos .main-titulo-proyectos {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.25rem; }
+  .main-proyectos .slider-box-anzed {
+    width: 100%;
+    height: 35.5rem;
+    margin: 0 auto 0;
+    padding: 0.625rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-anzed ul {
+      animation: slide 10s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-anzed ul li {
+        width: 100%;
+        height: 200px; }
+        .main-proyectos .slider-box-anzed ul li .a1 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-anzed ul li .a2 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-anzed ul li .a3 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-anzed ul li .a4 {
+          width: 95%;
+          height: 25rem; }
+  .main-proyectos .slider-box-akapellah {
+    width: 100%;
+    height: 35.5rem;
+    margin: 0 auto 0;
+    padding: 0.9375rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-akapellah ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: slide 10s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-akapellah ul li {
+        width: 100%; }
+        .main-proyectos .slider-box-akapellah ul li .aka1 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka2 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka3 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka4 {
+          width: 95%;
+          height: 25rem; }
+        .main-proyectos .slider-box-akapellah ul li .aka5 {
+          width: 95%;
+          height: 25rem; }
+  .main-proyectos .slider-box-stand-up {
+    width: 100%;
+    height: 48.625rem;
+    margin: 0 auto 0;
+    padding: 2.1875rem;
+    overflow: hidden; }
+    .main-proyectos .slider-box-stand-up ul {
+      display: flex;
+      padding: 0;
+      width: 400%;
+      animation: slide 20s infinite alternate ease-in-out; }
+      .main-proyectos .slider-box-stand-up ul li {
+        width: 100%; }
+        .main-proyectos .slider-box-stand-up ul li .texto {
+          width: 100%; }
+          .main-proyectos .slider-box-stand-up ul li .texto h2 {
+            font-family: "Roboto", sans-serif;
+            text-transform: capitalize; }
+        .main-proyectos .slider-box-stand-up ul li .stu1 {
+          width: 97%;
+          height: 25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu2 {
+          width: 97%;
+          height: 25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu3 {
+          width: 97%;
+          height: 25rem; }
+        .main-proyectos .slider-box-stand-up ul li .stu4 {
+          width: 97%;
+          height: 25rem; }
+
+@media (max-width: 320px) {
+  .main-servicios {
+    height: 99.375rem; }
+    .main-servicios .h2-servicios h2 {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1rem; }
+    .main-servicios .producto-container {
+      gap: .9375rem; }
+      .main-servicios .producto-container p {
+        font-size: .9375rem; }
+      .main-servicios .producto-container button {
+        border-radius: 3px;
+        padding: 5px 5px; }
+    .main-servicios .map-container {
+      width: 100%;
+      padding-top: .625rem;
+      padding-left: 0; }
+      .main-servicios .map-container iframe {
+        width: 95%; } }
+
+@media (max-width: 320px) {
+  .main-faq {
+    height: auto; }
+    .main-faq .h2-faq {
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 16px; } }

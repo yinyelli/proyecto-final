@@ -1,55 +1,172 @@
 @media (max-width:1024px){
     .main-inicio{
         .p-sobre-mi{
+            width: 49%;
             p{
-                @include p(100%, 1.5625rem, 16px, center); 
+                @include p(100%, 2.25rem, 20px, center); 
             }
-        }
+            .button-inf{
+                padding-left: 30%;
+                }
+            }
+             .img-sobre-mi{
+                    width: 50%;
+                 img{
+                    width: 85%;
+                    height: 30rem;
+                    margin:5%;
+                }
 
     }
-    .img-sobre-mi{
-        justify-content: center;
-        img{
-            margin: 3.75rem;
+}
+}
+
+@media (max-width:1024px){
+.main-proyectos{
+    .main-titulo-proyectos{
+    }
+   .slider-box-anzed{
+    @include slider-proyectos(100%, 48.625rem, 0 auto 0, 0, hidden);
+        ul{
+        li{
+
+            .texto{
+                width: 100%;
+                h2{
+                    font-family: $font-family-text;
+                    text-transform: capitalize;
+                }
+            }
+            .a1{
+                @include img-proyectos(75%, 25rem);
+                margin-left: 15px;
+            }
+            .a2{
+                @include img-proyectos(75%, 25rem);
+                margin-left: 15px;
+            }
+            .a3{
+                @include img-proyectos(75%, 25rem);
+                margin-left: 15px;
+            }
+            .a4{
+                @include img-proyectos(75%, 25rem);
+                margin-left: 15px;
+            }
+        }
+   }
+}
+        .slider-box-akapellah{
+            @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+            ul{
+            li{
+                .aka1{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka2{
+                    @include img-proyectos(99%, 31.25rem)
+                }
+                .aka3{
+                    @include img-proyectos(100%, 43.75rem)
+                }
+                .aka4{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka5{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+            }
         }
     }
-}
-@media (max-width:1024px){
-    .main-proyectos{
-        width: 100%;
-        height: 125rem;
-        .card-anzed{
-            width: 16%;
-        }
-        .card-akapellah{
-            width: 16%;
-        }
-        .card-lilsupa{
-            width: 16%;
-        }
-        .card-nanutria{
-            width: 16%;
-        }
-        .card-pda{
-            width: 16%;
+        .slider-box-stand-up{
+            @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+            ul{
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: slide 20s infinite alternate ease-in-out;
+            li{
+                width: 90%;
+                list-style: none;
+                position: relative;
+                .texto{
+                    width: 100%;
+                    h2{
+                        font-family: $font-family-text;
+                        text-transform: capitalize;
+                    }
+                }
+                .stu1{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu2{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu3{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu4{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+            }
         }
     }
+  }
 }
+
+
+
+
+
+
 @media (max-width:1024px){
-    .main-servicios{
+.main-servicios{
+    width: 100%;
+    height: auto;
+    background-color:$bg-main;
+    .h2-servicios{
         width: 100%;
-        height: 62.5rem;
+        height: auto;
+        background-color:$bg-h2;
+        h2{
+            @include h2(100%, center, capitalize, 1.25rem);
+            font-family:$font-family-title;
+        }
+    }
+    .producto-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: .9375rem;
+        gap: .9375rem;
+        align-items: center;
         .card{
-            width: 12.5rem;
+            @include card(50%, 15.625rem, gray, 5px, -14px -8px 10px #000);
         }
         .card-2{
-            width: 12.5rem;
+            @include card(50%, 15.625rem, gray, 5px, -14px -8px 10px #000);
         }
         .card-3{
-            width: 12.5rem;
+            @include card(50%, 15.625rem, gray, 5px, -14px -8px 10px #000);
         }
         .card-4{
-            width: 12.5rem;
+            @include card(50%, 15.625rem, gray, 5px, -14px -8px 10px #000);
+        }        
+
+        h3{
+            text-transform: capitalize ;
+        }
+        p{
+            font-size: 19px;
+        }
+        button{
+            border-radius:4px;
+            cursor: pointer;
+            padding: 10px 13px;
         }
     }
+    .map-container{
+        padding-left: 20%;
     }
+}
+}

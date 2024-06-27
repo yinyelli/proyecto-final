@@ -24,3 +24,14 @@
     border-radius: $border-radius;
     box-shadow: $box-shadow;
 }
+@mixin img-proyectos ($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin slider-proyectos ($width, $height, $margin, $padding, $overflow) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    overflow: $overflow;
+}

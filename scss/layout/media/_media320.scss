@@ -1,11 +1,190 @@
-@media (min-width:320px){
-    .header{
+@media (max-width:320px){
+    .main-inicio{
+        flex-direction: column;
+    .h2-sobre-mi{    
+        h2{
+            @include h2(100%, center, capitalize, 1rem);
+            }
+        }
+    .p-sobre-mi{
         width: 100%;
+    .button-inf{
+        padding-left: 20%;
+        }
+        }
+     .img-sobre-mi{
+            width: 90%;
+         img{
+            width: 80%;
+            height: 350px;
+            margin:15%;
+        }
+        .p-direccion{
+            padding: 10px;
+            padding-left: 15%;
+            font-size: 16px;
+         }
+        }
+    .h2_ppda{
+            @include h2(100%, center, capitalize, 1rem);
+        }
+    .section_ppda{
+        iframe{
+                width: 90%;
+            }
+        }
+    .p-ppda{
+        width: 80%;
+        margin: 1.5625rem;
+    }
+  }
+}
+
+
+
+.main-proyectos{
+    height: 112.5rem;
+    .main-titulo-proyectos{
+        @include h2(100%, center, capitalize, 1.25rem);
+    }
+   .slider-box-anzed{
+    @include slider-proyectos(100%, 35.5rem, 0 auto 0, .625rem, hidden);
+        ul{
+            animation: slide 10s infinite alternate ease-in-out;
+        li{
+            width: 100%;
+            height: 200px;
+            .a1{
+                @include img-proyectos(95%, 25rem)
+            }
+            .a2{
+                @include img-proyectos(95%, 25rem)
+            }
+            .a3{
+                @include img-proyectos(95%, 25rem)
+            }
+            .a4{
+                @include img-proyectos(95%, 25rem)
+            }
+        }
+   }
+}
+        .slider-box-akapellah{
+            @include slider-proyectos(100%, 35.5rem, 0 auto 0, .9375rem, hidden);
+            ul{
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: slide 10s infinite alternate ease-in-out;
+            li{
+                width: 100%;
+                .aka1{
+                    @include img-proyectos(95%, 25rem)
+                }
+                .aka2{
+                    @include img-proyectos(95%, 25rem)
+                }
+                .aka3{
+                    @include img-proyectos(95%, 25rem)
+                }
+                .aka4{
+                    @include img-proyectos(95%, 25rem)
+                }
+                .aka5{
+                    @include img-proyectos(95%, 25rem)
+                }
+            }
+        }
+    }
+        .slider-box-stand-up{
+            @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+            ul{
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: slide 20s infinite alternate ease-in-out;
+            li{
+                width: 100%;
+                .texto{
+                    width: 100%;
+                    h2{
+                        font-family: $font-family-text;
+                        text-transform: capitalize;
+                    }
+                }
+                .stu1{
+                    @include img-proyectos(97%, 25rem)
+                }
+                .stu2{
+                    @include img-proyectos(97%, 25rem)
+                }
+                .stu3{
+                    @include img-proyectos(97%, 25rem)
+                }
+                .stu4{
+                    @include img-proyectos(97%, 25rem)
+                }
+            }
+        }
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:320px){
-    .main-faq{
-        height: auto;
+.main-servicios{
+    height: 99.375rem;
+    .h2-servicios{
+        h2{
+            @include h2(100%, center, capitalize, 1rem);
+        }
     }
+    .producto-container{
+        gap: .9375rem;
+        h3{
+        }
+        p{
+            font-size: .9375rem;
+        }
+        button{
+            border-radius:3px;
+            padding: 5px 5px;
+        }
+    }
+    .map-container{
+        width: 100%;
+        padding-top: .625rem;
+        padding-left: 0;
+        iframe{
+            width: 95%;
+        }
+    }
+}
+}
+
+
+
+@media (max-width: 320px){
+        .main-faq{
+           height: auto;
+            .h2-faq{
+                @include h2(100%, center, capitalize, 16px);
+            }
+        }
 }

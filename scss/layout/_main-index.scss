@@ -10,18 +10,19 @@
         background-color:$bg-h2;
 
         h2{
-            @include h2(100%, center, uppercase, 1.25rem);
+            @include h2(100%, center, capitalize, 1.25rem);
             font-family:$font-family-title;
         }
     }
 .p-sobre-mi{
-     width: 48%;
+     width: 40%;
      height: auto;
      p{
-        @include p(100%, 5rem, 16px, center);
+        @include p(100%, 5.9375rem, 20px, center);
         font-family:$font-family-text;
      }
     .button-inf{
+        padding-left: 33%;
         a{
             &:hover{
                 text-decoration: overline;
@@ -36,50 +37,185 @@
     }
     }
     .img-sobre-mi{
-        width: 49%;
+        width: 50%;
         img{
-            width: 50%;
-            height: auto;
-            border-radius: 45%;
+            width: 80%;
+            height: 43.75rem;
+            margin: 50px;
+            border-radius: 50%;
         }
     .p-direccion{
             width: 100%;
             height: auto;
-            font-family:$font-family-text;
-            margin: 1.875rem;
-            padding: auto;
-        }
-    }
-    .h2_ppda{
-        @include h2(100%, center, uppercase, 1.25rem);
-        height: auto;
-        background-color: $bg-h2;
-        font-family:$font-family-title;
-    }
-    .section_ppda{
-        width: 100%;
-        height: auto;
-        iframe{
-            width: 60%;
-            height: 100%;
-            margin: 1rem;
-            padding: 1rem;
-            justify-content: center;
-        }
+            padding: 30px;
+            padding-left: 20%;
+            font-family: $font-family-text;
+            font-size: 20px;
+            text-transform: capitalize;
+            top: 0;
+         }
+      }
+      .h2_ppda{
+         @include h2(100%, center, capitalize, 1.25rem);
+         height: auto;
+         background-color: $bg-h2;
+         font-family:$font-family-title;
+     }
+     .section_ppda{
+         width: 100%;
+         height: auto;
+         iframe{
+             width: 70%;
+             height: 500px;
+             margin: 1rem;
+             padding: 1rem;
+         }
+  }
+     .p-ppda{
+     width: 100%;
+     height: auto;
+     font-family:$font-family-text;
+     margin: 3.125rem;
  }
-    .p-ppda{
-    width: 100%;
-    height: auto;
-    font-family:$font-family-text;
-    margin: 3.125rem;
-}
-}
+ }
 
 .main-proyectos{
     width: 100%;
+    height: 150.00rem;
+    background-color: $bg-main;
+    font-family: $font-family-title;
+    .main-titulo-proyectos{
+        @include h2(100%, center, capitalize, 1.25rem);
+        font-family:$font-family-title;
+        background-color: $bg-h2;
+        padding-top: 10px;
+    }
+   .slider-box-anzed{
+    @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+        ul{
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: slide 20s infinite alternate ease-in-out;
+        li{
+            width: 90%;
+            list-style: none;
+            position: relative;
+            .texto{
+                width: 100%;
+                h2{
+                    font-family: $font-family-text;
+                    text-transform: capitalize;
+                }
+            }
+            .a1{
+                @include img-proyectos(95%, 31.25rem)
+            }
+            .a2{
+                @include img-proyectos(95%, 31.25rem)
+            }
+            .a3{
+                @include img-proyectos(95%, 31.25rem)
+            }
+            .a4{
+                @include img-proyectos(95%, 31.25rem)
+            }
+        }
+   }
+}
+        .slider-box-akapellah{
+            @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+            ul{
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: slide 20s infinite alternate ease-in-out;
+            li{
+                width: 90%;
+                list-style: none;
+                position: relative;
+                .texto{
+                    width: 100%;
+                    h2{
+                        font-family: $font-family-text;
+                        text-transform: capitalize;
+                    }
+                }
+                .aka1{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka2{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka3{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka4{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .aka5{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+            }
+        }
+    }
+        .slider-box-stand-up{
+            @include slider-proyectos(100%, 48.625rem, 0 auto 0, 2.1875rem, hidden);
+            ul{
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: slide 20s infinite alternate ease-in-out;
+            li{
+                width: 90%;
+                list-style: none;
+                position: relative;
+                .texto{
+                    width: 100%;
+                    h2{
+                        font-family: $font-family-text;
+                        text-transform: capitalize;
+                    }
+                }
+                .stu1{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu2{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu3{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+                .stu4{
+                    @include img-proyectos(95%, 31.25rem)
+                }
+            }
+        }
+
+        @keyframes slide {
+            0% { margin-left: 0; }
+            20% { margin-left: 0; }
+    
+            25% { margin-left: -100%; }
+            45% { margin-left: -100%; }
+    
+            50% { margin-left: -200%; }
+            70% { margin-left: -200%; }
+    
+            75% { margin-left: -300%; }
+            100% { margin-left: -300%; }
+        }
+    }
+}
+
+
+
+
+/** .main-proyectos{
+    width: 100%;
     height: auto;
     background-color:$bg-main;
-    h2{
+     h2{
         @include h2(100%, center, uppercase, 1.25rem);
         font-family:$font-family-title;
         background-color: $bg-h2;
@@ -150,37 +286,43 @@
             justify-content: center;
         }
     }
-}
+}**/
 
 
 .main-servicios{
     width: 100%;
-    height: 62.5rem;
+    height: auto;
     background-color:$bg-main;
     .h2-servicios{
         width: 100%;
         height: auto;
         background-color:$bg-h2;
         h2{
-            width: 100%;
+            @include h2(100%, center, capitalize, 1.25rem);
             font-family:$font-family-title;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 1.25rem;
         }
     }
     .producto-container{
         width: 100%;
         display: flex;
-        justify-content: center;
-        margin: 1.25rem;
-        gap: .625rem;
+        justify-content: space-evenly;
+        margin-top: .9375rem;
+        h3{
+            text-transform: capitalize ;
+        }
+        p{
+            font-size: 18px;
+        }
+        button{
+            border-radius:4px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
     }
     .map-container{
-        padding-bottom: 56.25%;
-        border: 2px solid #ccc;
-        border-radius: 8px;
-        gap: 50%;
+        align-items: center;
+        padding-top: 5%;
+        padding-left: 30%;
     }
 }
 .main-faq{
@@ -188,7 +330,7 @@
     height: auto;
     background-color:$bg-main;
     .h2-faq{
-        @include h2(100%, center, uppercase, 1.25rem);
+        @include h2(100%, center, capitalize, 1.25rem);
         font-family:$font-family-title;
         background-color: $bg-h2;
     }

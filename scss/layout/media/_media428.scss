@@ -1,0 +1,74 @@
+@media (max-width:428px){
+    .main-inicio{
+        flex-direction: column;
+        .h2-sobre-mi{    
+            h2{
+                @include h2(100%, center, capitalize, 1rem);
+                }
+            }
+        .p-sobre-mi{
+          width: 100%;
+          .button-inf{
+            padding-left: 27%;
+            }
+        }
+       .img-sobre-mi{
+         width: 90%;
+         img{
+          width: 90%;
+          height: 350px;
+          margin:10%;
+        }
+     }
+    .p-ppda{
+        width: 80%;
+        margin: 1.5625rem;
+    }
+   }
+}
+
+
+
+
+
+
+@media (max-width:428px){
+    .main-servicios{
+        height: 87.5rem;
+        .h2-servicios{
+            h2{
+                @include h2(100%, center, uppercase, 1.125rem);
+            }
+        }
+        .producto-container{
+            flex-direction: column;
+            gap: .9375rem;
+            align-items: center;
+            p{
+                font-size: 18px;
+            }
+        }
+        .map-container{
+            width: 100%;
+            padding-top: 0;
+            padding-left: 0;
+            iframe{
+                width: 95%;
+            }
+        }
+    }
+    }
+
+
+
+@media (max-width:428px){
+     .main-faq{
+        height: 125rem;
+         .h2-faq{
+             @include h2(100%, center, capitalize, 16px);
+         }
+         .ul-faq{
+             padding: 45px;
+         }
+     }
+} 

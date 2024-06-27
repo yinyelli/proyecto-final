@@ -1,0 +1,8 @@
+@media (max-width: 393px){
+    .main-faq{
+       height: 146.875rem;
+        .h2-faq{
+            @include h2(100%, center, capitalize, 16px);
+        }
+    }
+}
